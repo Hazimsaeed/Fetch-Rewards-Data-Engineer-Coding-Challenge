@@ -8,7 +8,7 @@ Dockerfile: This will have docker installation data
 
 ## To run the code locally: run it on the IDE and you will get link, copy and past it in the browser.
 
-## To run Docker please just fellow below instraction.
+## To run Docker please fellow below instraction.
 ```python
 
     build -t fetch-rewards-coding:latest .
@@ -28,6 +28,13 @@ To build and run Docker image
 
         http://127.0.0.1:5002
 
+```
+## If you don't want to clone the code from github and you want to run Docker use below code to pull the image from docker hub the to run it
+```python
+
+        docker pull mrhazim/fetch-rewards-coding:latest
+        docker run -it -d -p 127.0.0.1:5002:5002 mrhazim/fetch-rewards-coding
+        
 ```
 
 ## Docker commands
