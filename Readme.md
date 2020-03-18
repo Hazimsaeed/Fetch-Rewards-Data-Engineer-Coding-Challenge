@@ -1,38 +1,32 @@
-## Git clone the application
+## Fetch-Rewards-Data-Engineer-Coding-Challenge
+# Fetch Rewards Data Engineer Coding Challenge text similarity
 
-## Create a virtual environment inside the application 
+## I used cosine similiraty to compare two texts. 
+I created a web form for useser to enter texts and calles POST API to get the result
+coding_challenge.py will have all the code of the API
+Dockerfile: This will have docker installation data
 
+## To run the code locally: run it on the IDE and you will get link, copy and past it in the browser.
+
+## To run Docker please just fellow below instraction.
 ```python
 
-    virtualenv -p /usr/bin/python3 venv    
-
-    source venv/bin/activate
+    build -t fetch-rewards-coding:latest .
 
 ```
 
-## Install Python modules
-
 ```python
 
-   pip3 install -r requirements.txt 
+    docker run -it -d -p 127.0.0.1:5002:5002 fetch-rewards-coding
     
 ```
+To build and run Docker image
 
-
-## Run the application using
-
-```python
-
-    python app.py
-
-```
-
-
-## You will get below REST API
+## You can type the below to access REST API
 
 ```python
 
-        http://localhost:5000
+        http://127.0.0.1:5002
 
 ```
 
@@ -56,8 +50,5 @@
         
         // run a docker container in daemon mode with ports exposed
         docker run -it -d -p <outsidePort>:<dockerInsidePort> <imageName:version>
-
-
-
 
 ```
