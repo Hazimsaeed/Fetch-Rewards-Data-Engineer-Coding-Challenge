@@ -13,7 +13,7 @@ def form_example():
     # tokenization
         X_list = set(text1.split())
         Y_list = set(text2.split())
-
+ 
         # sw contains the list of stopwords
         sw = [
             "i",
