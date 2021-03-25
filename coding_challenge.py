@@ -1,7 +1,7 @@
 from flask import Flask, request  # import main Flask class and request object
   
 app = Flask(__name__)  # create the Flask app
-  
+   
 
 @app.route("/", methods=["GET", "POST"])  # allow both GET and POST requests
 def form_example():
